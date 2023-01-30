@@ -1,40 +1,181 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section style="color: black; font-weight: bold; font-size: 4rem;
+			top: 230px;" data-auto-animate data-background-image="./assets/back.jpg"> Hypertext Transfer Protocol <br/> (HTTP) </section>
+            <section style="color: rgb(146, 17, 17); font-weight: bold;" data-auto-animate data-background-image="./assets/back.jpg">
+                <section style="color: rgb(146, 17, 17); font-weight: bold;" data-auto-animate data-background-image="./assets/back.jpg">
+                    <h3 style="color: rgb(146, 17, 17); font-weight: bold;">Stages of HTTP operation</h3>
+                </section>
+                <section style="color: black; font-weight: bold;" data-auto-animate data-background-image="./assets/back.jpg">
+                    <h3 style="color: rgb(146, 17, 17); font-weight: bold;">Stages of HTTP operation</h3>
+                    <ul>
+                        <li>Open a connection</li>
+                    </ul>
+                </section>
+                <section style="color: black; font-weight: bold;" data-auto-animate data-background-image="./assets/back.jpg">
+                    <h3 style="color: rgb(146, 17, 17); font-weight: bold;">Stages of HTTP operation</h3>
+                    <ul>
+                        <li>Open a connection</li>
+                        <li>Sending a client request (browser)</li>
+                    </ul>
+                </section>
+                <section style="color: black; font-weight: bold;" data-auto-animate data-background-image="./assets/back.jpg">
+                    <h3 style="color: rgb(146, 17, 17); font-weight: bold;">Stages of HTTP operation</h3>
+                    <ul>
+                        <li>Open a connection</li>
+                        <li>Sending a client request (browser)</li>
+                        <li>Getting a response from the server (webserver)</li>
+                    </ul>
+                </section>
+                <section style="color: black; font-weight: bold;" data-auto-animate data-background-image="./assets/back.jpg">
+                    <h3 style="color: rgb(146, 17, 17); font-weight: bold;">Stages of HTTP operation</h3>
+                    <ul>
+                        <li>Open a connection</li>
+                        <li>Sending a client request (browser)</li>
+                        <li>Getting a response from the server (webserver)</li>
+                        <li>Breaking or reuses connection for the next request</li>
+                    </ul>
+                </section>
+            </section>
+            <section style="color: rgb(146, 17, 17); font-weight: bold;" data-auto-animate data-background-image="./assets/back.jpg">
+                <section style="color: rgb(146, 17, 17); font-weight: bold;" data-auto-animate data-background-image="./assets/back.jpg">
+                    <h2 style="color: rgb(146, 17, 17); font-weight: bold;">HTTP messages</h2>
+                </section>
+
+                <section>
+                    HTTP Request Message
+                    <img src="https://documentation.help/DogeTool-HTTP-Requests-vt/http_requestmessageexample.png" alt="HTTP Request Message">
+                </section>
+                <section style="color: black; font-weight: bold;" data-auto-animate data-background-image="./assets/back.jpg">
+                    <h4 style="color: rgb(146, 17, 17); font-weight: bold; font-size: 3rem;">HTTP methods</h4>
+                    <ul>
+                        <li>GET </li>
+                        <li>POST </li>
+                        <li>HEAD </li>
+                        <li>PUT </li>
+                        <li>DELETE </li>
+                        <li>LINK </li>
+                        <li>UNLINK </li>
+                        <li>OPTIONS </li>
+                        <li>TRACE </li>
+                    </ul>
+                </section>
+                <section style="color: rgb(146, 17, 17); font-weight: bold;" data-auto-animate data-background-image="./assets/back.jpg">
+                    HTTP Response Message
+                    <img src="https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/images/HTTP_ResponseMessageExample.png" alt="HTTP Response Message">
+                </section>
+                <section style="color: black; font-weight: bold;" data-auto-animate data-background-image="./assets/back.jpg">
+                    <h4 style="color: rgb(146, 17, 17); font-weight: bold; font-size: 3rem;">HTTP Status Codes</h4>
+                    <ul>
+                        <li>1XX - Information responses</li>
+                        <li>2XX - Successful responses</li>
+                        <li>3XX - Redirection messages</li>
+                        <li>4XX - Client error responses</li>
+                        <li>5XX - Server error responses</li>
+                    </ul>
+                </section>
+            </section>
+            <section style="color: rgb(146, 17, 17); font-weight: bold;" data-auto-animate data-background-image="./assets/back.jpg">
+                <section style="color: rgb(146, 17, 17); font-weight: bold; width: 100%;" data-auto-animate data-background-image="./assets/back.jpg">
+                    <h4 style="color: rgb(146, 17, 17); font-weight: bold; font-size: 3rem;">HTTP. History</h4>
+
+                </section>
+                <section style="color: rgb(146, 17, 17); font-weight: bold; width: 100%;" data-auto-animate data-background-image="./assets/back.jpg">
+                    <h3 style="color: rgb(146, 17, 17); font-weight: bold;     font-size: 4rem;
+					margin-bottom: 0;">HTTP 0.9</h3>
+                    <h8 style="color: rgb(146, 17, 17); font-weight: bold; font-size: 2rem;">The One-Line protocol</h8> <br/> <br/> Requests:<br/>
+                    <pre style="color:black;">
+						<code>
+						GET /mypage.html
+						</code>
+					</pre><br/> Response:<br/>
+                    <pre style="color:black;">
+					  <code>
+					    HTML
+					    A very simple HTML page
+					    /HTML
+					  </code>
+				    </pre>
+
+                </section>
+                <section style="color: rgb(146, 17, 17); font-weight: bold; width: 100%;" data-auto-animate data-background-image="./assets/back.jpg">
+
+                    <h3 style="color: rgb(146, 17, 17); font-weight: bold;     font-size: 4rem;
+					margin-bottom: 0;">HTTP 1.0</h3>
+                    <h8 style="color: rgb(146, 17, 17); font-weight: bold; font-size: 2rem;">Building extensibility </h8> <br/> <br/> Typical request was then looking like this:<br/>
+                    <pre style="color:black;">
+						<code>
+						GET /mypage.html HTTP/1.0
+						User-Agent: NCSA_Mosaic/2.0 (Windows 3.1)
+                    
+						200 OK
+						Date: Tue, 15 Nov 1994 08:12:31 GMT
+						Server: CERN/3.0 libwww/2.17
+						Content-Type: text/html
+					</code>
+					</pre>
+                </section>
+                <section style="color: rgb(146, 17, 17); font-weight: bold; width: 100%;" data-auto-animate data-background-image="./assets/back.jpg">
+
+                    <h3 style="color: rgb(146, 17, 17); font-weight: bold;     font-size: 4rem;
+					margin-bottom: 0;">HTTP 1.1</h3>
+                    <h8 style="color: rgb(146, 17, 17); font-weight: bold; font-size: 2rem;">The standardized protocol </h8> <br/> <br/> Typical request was then looking like this:<br/>
+                    <img style="width: 60%;" src="./assets/HTTP1.1.png" alt="HTTP1.1">
+
+                </section>
+                <section style="color: rgb(146, 17, 17); font-weight: bold; width: 100%;" data-auto-animate data-background-image="./assets/back.jpg">
+
+                    <h3 style="color: rgb(146, 17, 17); font-weight: bold;     font-size: 4rem;
+					margin-bottom: 0;">HTTP 2.0</h3>
+                    <h8 style="color: rgb(146, 17, 17); font-weight: bold; font-size: 2rem;"> A protocol for greater performance </h8> <br/><br/> HTTP 2 Multiplexing<br/>
+                    <img style="width: 46%;" src="https://dz2cdn1.dzone.com/storage/temp/14019347-http1-vs-http2-multiplexing.png" alt="HTTP 2.0">
+                </section>
+
+            </section>
+
+
+            <section style="color: rgb(146, 17, 17); font-weight: bold;" data-auto-animate data-background-image="./assets/back.jpg">
+
+                The End
+            </section>
+
+
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
 </html>
